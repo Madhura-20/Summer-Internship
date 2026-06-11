@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>College Website Navbar</title>
+
+    <style>
+
+        nav{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 15px 40px;
+        }
+
+        .logo{
+            color:white;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul{
+            display:flex;
+            flex-direction: row;
+            list-style: none;
+            gap:30px;
+
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding:6px 10px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        
+
+        a:hover{
+            background-color: white;
+            color:black;
+        }
+
+    @media (max-width: 768px){
+
+        nav{
+            flex-direction: row;
+            align-items: flex-start;
+            gap:15px;
+        }
+
+        ul{
+            flex-direction: row;
+            width: 100%;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        ul li{
+            width: 100%;
+        }
+
+        ul li a{
+            display: block;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+
+        </style>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">St.Joseph's College</div>
+        <ul >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Placements</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
