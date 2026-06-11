@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <title>Restaurant Menu</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color:white
+
+        }
+
+        h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        pre,p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        body{
+            margin:0;
+            background-image: url("restaurant.jpg");
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .categories{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+           
+
+        
+
+        .categories button{
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+
+        .food-card{
+            width:250px;
+            padding:20 px;
+            border:2px,solid white;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+            transition:0.3s;
+        }
+
+        .food-card img{
+        width: 100%;
+        height: 150px;
+        border-radius: 15px;
+        gap: 50px;
+    }
+
+        .food-card:hover{
+            transform: translateY(-10px);
+            border-color: orange;
+            box-shadow: 5px 5px 15px gray;;
+        }
+
+        .foodcard span{
+            color:gold;
+            font-size: 20 px;
+            font-weight: bold;
+        }
+
+        .menu{
+            display: flex;
+            gap:70 px;
+            justify-content: center;
+            margin-top:30px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Restaurant Menu</h1>
+
+        <div class="categories">
+        <button>Starters</button>
+        <button>Main course</button>
+        <button>Desserts</button>
+        <button>Beverages</button>
+        </div>
+
+        <div class="menu">
+            <div class="food-card">
+                <img src="pizza.jpg">
+                <h3><u>Pizza</u></h3>
+                <p> Cheesy and Delicious </p>
+                <pre>₹299</pre>
+            </div>
+
+            <div class="food-card">
+                <img src="burger.jpg">
+                <h3><u>Burger</u></h3>
+              <p>Juicy and tasty burger</p>
+              <pre>₹199</pre>
+</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
