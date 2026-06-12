@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background-color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background-color:lightblue;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero button{
+    padding:12px 25px;
+    font-size:18px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:50px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card{
+    border:1px solid black;
+    padding:20px;
+    width:250px;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.navbar ul li a{
+    font-weight:bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.features > .card{
+    background-color:white;
+}
+
+.card:first-child{
+    background-color:lightgreen;
+}
+
+.card:last-child{
+    background-color:lightpink;
+}
+
+.nav-links a:hover{
+    color:darkgoldenrod;
+}
+
+.hero button:hover{
+    background-color:black;
+    color:white;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card{
+    transition:0.3s;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+        padding:0;
+    }
+
+    .features{
+        flex-direction:column;
+        align-items:center;
+    }
+}
