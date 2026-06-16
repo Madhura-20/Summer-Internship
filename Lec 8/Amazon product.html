@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Product Section</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background-color:lightgray;
+        }
+
+        
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background-color:black;
+            color:white;
+            padding:15px 30px;
+        }
+
+        .logo{
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        .search-box{
+            display:flex;
+            gap:10px;
+        }
+
+        .search-box input{
+            padding:10px;
+            width:300px;
+            border:none;
+            border-radius:5px;
+        }
+
+        .search-box button{
+            padding:10px 20px;
+            border:none;
+            background-color:orange;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        
+        .categories{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            background-color:#232f3e;
+            padding:15px;
+        }
+
+        .categories a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .categories a:hover{
+            color:orange;
+        }
+
+        
+        .products{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+            padding:20px;
+        }
+
+        
+        .card{
+            width:220px;
+            background-color:white;
+            border-radius:10px;
+            text-align:center;
+            padding:15px;
+            box-shadow:0 0 10px lightgray;
+            transition:0.3s;
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+            box-shadow:0 0 20px gray;
+        }
+
+        .card h3{
+            margin:10px 0;
+        }
+
+        .card p{
+            font-size:18px;
+            font-weight:bold;
+            color:green;
+        }
+
+        .card button{
+            padding:10px 20px;
+            border:none;
+            background-color:orange;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .card button:hover{
+            background-color:darkorange;
+        }
+
+        
+        @media(max-width:768px){
+
+            .navbar{
+                flex-direction:column;
+                gap:10px;
+            }
+
+            .search-box input{
+                width:200px;
+            }
+
+            .categories{
+                flex-wrap:wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Amazon</div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search Products">
+            <button>Search</button>
+        </div>
+    </nav>
+
+    <!-- Category Menu -->
+    <div class="categories">
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Books</a>
+        <a href="#">Home</a>
+        <a href="#">Sports</a>
+    </div>
+
+    <!-- Product Section -->
+    <div class="products">
+
+        <div class="card">
+            <img src="S1.jpg" alt="Smart Watch">
+            <h3>Product 1</h3>
+            <p>₹999</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S2.jpg" alt="">
+            <h3>Product 2</h3>
+            <p>₹1299</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S3.jpg" alt="">
+            <h3>Product 3</h3>
+            <p>₹1499</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S4.jpg" alt="">
+            <h3>Product 4</h3>
+            <p>₹799</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S5.jpg" alt="">
+            <h3>Product 5</h3>
+            <p>₹1999</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S6.jpg" alt="">
+            <h3>Product 6</h3>
+            <p>₹899</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S7.jpg" alt="">
+            <h3>Product 7</h3>
+            <p>₹1199</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S8.jpg" alt="">
+            <h3>Product 8</h3>
+            <p>₹1599</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S9.jpg" alt="">
+            <h3>Product 9</h3>
+            <p>₹999</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S10.jpg" alt="">
+            <h3>Product 10</h3>
+            <p>₹1299</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S11.jpg" alt="">
+            <h3>Product 11</h3>
+            <p>₹1799</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S12.jpg" alt="">
+            <h3>Product 12</h3>
+            <p>₹699</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S13.png" alt="">
+            <h3>Product 13</h3>
+            <p>₹899</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S14.jpg" alt="">
+            <h3>Product 14</h3>
+            <p>₹1099</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="S15.jpg" alt="">
+            <h3>Product 15</h3>
+            <p>₹1399</p>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

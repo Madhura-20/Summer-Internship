@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Dashboard Clone</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background-color:black;
+            color:white;
+        }
+
+        /* Main Layout */
+        .container{
+            display:flex;
+            min-height:100vh;
+        }
+
+        /* Sidebar */
+        .sidebar{
+            width:220px;
+            background-color:black;
+            padding:20px;
+        }
+
+        .sidebar h2{
+            color:green;
+        }
+
+        .menu{
+            margin-top:30px;
+        }
+
+        .menu a{
+            display:block;
+            color:white;
+            text-decoration:none;
+            padding:12px;
+            margin-bottom:10px;
+            border-radius:5px;
+        }
+
+        .menu a:hover{
+            background-color:green;
+        }
+
+        /* Content Area */
+        .content{
+            flex:1;
+            padding:20px;
+        }
+
+        h2{
+            margin-bottom:15px;
+        }
+
+        /* Song Cards */
+        .songs{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .card{
+            background-color:#181818;
+            width:180px;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+        }
+
+        .card img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        .card h4{
+            margin:10px 0 5px;
+        }
+
+        .card p{
+            color:lightgray;
+        }
+
+        @media(max-width:768px){
+
+            .container{
+                flex-direction:column;
+            }
+
+            .sidebar{
+                width:100%;
+            }
+
+            .songs{
+                justify-content:center;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+        <div class="sidebar">
+
+            <h2>Spotify</h2>
+
+            <div class="menu">
+                <a href="#">🏠 Home</a>
+                <a href="#">🔍 Search</a>
+                <a href="#">🎵 Library</a>
+            </div>
+
+        </div>
+
+        
+        <div class="content">
+
+            <h2>Trending Songs</h2>
+
+            <div class="songs">
+
+                <div class="card">
+                    <img src="anbe.jpg">
+                    <h4>Anbe Anbe</h4>
+                    <p>Darling</p>
+                </div>
+
+                <div class="card">
+                    <img src="96.jpg">
+                    <h4>Iravingu Theevaai</h4>
+                    <p>96</p>
+                </div>
+
+                <div class="card">
+                    <img src="sangamam.jpg">
+                    <h4>Sangamam</h4>
+                    <p>Sangamam</p>
+                </div>
+
+                <div class="card">
+                    <img src="aalolam.jpg">
+                    <h4>Aalolam Paadi</h4>
+                    <p>Aavaaram Poo</p>
+                </div>
+
+            </div>
+
+            <h2 style="margin-top:40px;">Recently Played</h2>
+
+            <div class="songs">
+
+                <div class="card">
+                    <img src="ven.jpg">
+                    <h4>Venmathi Venmathiye</h4>
+                    <p>Minnale</p>
+                </div>
+
+                <div class="card">
+                    <img src="kannaana.jpg">
+                    <h4>Kannaana kanne</h4>
+                    <p>Naanum Rowdy thaan</p>
+                </div>
+
+                <div class="card">
+                    <img src="perfect.jpg">
+                    <h4>Perfect</h4>
+                    <p>Album</p>
+                </div>
+
+                <div class="card">
+                    <img src="amma.jpg">
+                    <h4>Aasapatta Ellaathayum</h4>
+                    <p>Viyaabaari</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
